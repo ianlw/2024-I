@@ -1,0 +1,13 @@
+si (a == b) {
+    mientras (c < d) {
+        e = e + f;
+    }
+    g = g - h;
+}
+
+x = y * z;
+u = v / w;
+
+k != l;
+m > n;
+o < p;
