@@ -1,3 +1,4 @@
+
 %{
 #include <stdio.h>
 %}
@@ -24,7 +25,7 @@ int yywrap() {
 }
 
 int main() {
-    #define ARCHIVO_CODIGO "expresiones.txt"
+    #define ARCHIVO_CODIGO "expresiones.a"
     FILE *archivo = fopen(ARCHIVO_CODIGO, "r");
     if (archivo == NULL) {
         fprintf(stderr, "Error al abrir el archivo %s\n", ARCHIVO_CODIGO);

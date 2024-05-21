@@ -4,23 +4,22 @@
 
 %option noyywrap
 
-/* Define el nombre del archivo */
 
 %%
 
 "//"(.*)       { /* Comentario de una línea */
-                    printf("Comentario: %s\n", yytext + 2); // El comentario comienza después de los primeros dos caracteres "//"
+                    printf("Comentario: %s\n", yytext + 2); 
                  }
 
 "/*"            { /* Comentario multilinea */
                     printf("Comentario multilinea: ");
-                    int comentario_abierto = 1;
-                    while (comentario_abierto) {
+                    int comentarioAbierto = 1;
+                    while (comentarioAbierto) {
                         char c = input();
                         if (c == '*') {
                             c = input();
                             if (c == '/') {
-                                comentario_abierto = 0;
+                                comentarioAbierto = 0;
                             }
                         } else {
                             putchar(c);

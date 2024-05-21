@@ -456,8 +456,7 @@ char *yytext;
 #line 2 "comentariosTokens.l"
 #include <stdio.h>
 #line 458 "comentariosTokens.yy.c"
-/* Define el nombre del archivo */
-#line 460 "comentariosTokens.yy.c"
+#line 459 "comentariosTokens.yy.c"
 
 #define INITIAL 0
 
@@ -674,10 +673,10 @@ YY_DECL
 		}
 
 	{
-#line 9 "comentariosTokens.l"
+#line 8 "comentariosTokens.l"
 
 
-#line 680 "comentariosTokens.yy.c"
+#line 679 "comentariosTokens.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -736,23 +735,23 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 11 "comentariosTokens.l"
+#line 10 "comentariosTokens.l"
 { /* Comentario de una línea */
-                    printf("Comentario: %s\n", yytext + 2); // El comentario comienza después de los primeros dos caracteres "//"
+                    printf("Comentario: %s\n", yytext + 2); 
                  }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 15 "comentariosTokens.l"
+#line 14 "comentariosTokens.l"
 { /* Comentario multilinea */
                     printf("Comentario multilinea: ");
-                    int comentario_abierto = 1;
-                    while (comentario_abierto) {
+                    int comentarioAbierto = 1;
+                    while (comentarioAbierto) {
                         char c = input();
                         if (c == '*') {
                             c = input();
                             if (c == '/') {
-                                comentario_abierto = 0;
+                                comentarioAbierto = 0;
                             }
                         } else {
                             putchar(c);
@@ -763,35 +762,35 @@ YY_RULE_SETUP
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 32 "comentariosTokens.l"
+#line 31 "comentariosTokens.l"
 { printf("Palabra clave: inicio\n"); }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 33 "comentariosTokens.l"
+#line 32 "comentariosTokens.l"
 { printf("Palabra clave: fin\n"); }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 34 "comentariosTokens.l"
+#line 33 "comentariosTokens.l"
 { printf("Palabra clave: si\n"); }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 35 "comentariosTokens.l"
+#line 34 "comentariosTokens.l"
 { printf("Palabra clave: sino\n"); }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 37 "comentariosTokens.l"
+#line 36 "comentariosTokens.l"
 { /* Ignorar caracteres desconocidos */ }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 39 "comentariosTokens.l"
+#line 38 "comentariosTokens.l"
 ECHO;
 	YY_BREAK
-#line 794 "comentariosTokens.yy.c"
+#line 793 "comentariosTokens.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1796,7 +1795,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 39 "comentariosTokens.l"
+#line 38 "comentariosTokens.l"
 
 
 int main() {

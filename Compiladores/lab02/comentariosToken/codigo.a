@@ -1,0 +1,8 @@
+inicio
+// Esto es un comentario
+si condicion:
+    /* Este es un comentario
+    multilinea */
+    hacer_algo()
+fin
+
