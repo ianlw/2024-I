@@ -4,7 +4,8 @@ class View:
     def __init__(self, ventana):
         self.ventana = ventana
         self.ventana.title('Calculadora')
-        self.pantalla = Text(ventana, state='disabled', width=40, height=3, background='white', foreground='blue', font=('Helvetica', 15))
+        self.pantalla = Text(ventana, state='disabled', width=40, height=3, 
+                                    background='white', foreground='blue', font=('Helvetica', 15))
         self.pantalla.grid(row=0, column=0, columnspan=4, padx=5, pady=5)
         self.operacion = ""
 
