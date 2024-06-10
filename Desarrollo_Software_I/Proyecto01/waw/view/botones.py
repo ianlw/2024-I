@@ -195,8 +195,17 @@ class Botones():
         expression = self.input.get()
         if (self.controller.simbolos_agrupacion_balanceado(expression)):
 
-            if re.search(r'[\+\-\*/]{2,}', expression) or re.search(r'^[\+\*/]', expression) or re.search(r'[\+\-\*/]$', expression) or re.search(r'\(\)', expression) or re.search(r'[\+\-\*/]\(\)', expression) or re.search(r'\(\)[\+\-\*/]', expression) or re.search(r'[\{\}]', expression) or re.search(r'[\[\]]', expression) or re.search(r'\d\(', expression) or re.search(r'\)\d', expression):
-                self.output.config(text="Expresion erronea")
+            if (re.search(r'[\+\-\*/]{2,}', expression) or 
+                re.search(r'^[\+\*/]', expression) or 
+                re.search(r'[\+\-\*/]$', expression) or 
+                re.search(r'\(\)', expression) or 
+                re.search(r'[\+\-\*/]\(\)', expression) or 
+                re.search(r'\(\)[\+\-\*/]', expression) or 
+                re.search(r'\{\}', expression) or 
+                re.search(r'\[\]', expression) or 
+                re.search(r'\d\(', expression) or 
+                re.search(r'\)\d', expression)):
+                # self.output.config(text="Expresion erronea")
                 self.mensaje("Error en la expresion", "La expresion escrita no es correcta")
 
                 

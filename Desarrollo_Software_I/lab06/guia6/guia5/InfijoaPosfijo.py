@@ -1,5 +1,6 @@
 from stack import Stack 
 import re
+
 def valPreced(s):
     if s == "^":
         return 4
@@ -28,7 +29,7 @@ def InfijaAPostEija(expresion):
 
     infijo = re.findall(r"(\b\w*[\.]?\w+\b|[\(\)\[\]\{\}\^\+\*\-\/])", expresion)
     # infijo = re.findall(r"(\b\w*[\.]?\w+\b|[\(\)\^\+\*\-\/])", expresion)
-    print(infijo)
+    #print(infijo)
     salida = ""
 
     for s in infijo:
@@ -48,14 +49,14 @@ def InfijaAPostEija(expresion):
 
     while not pila.isEmpty():
         salida += pila.pop() + " "
-
+    #print(salida)
     return salida
+    
 
 
-print("Expresiones infijas a posfijas")
-# print(InfijaAPostEija("45000/{12*(23+3)^2}"))
+#print("Expresiones infijas a posfijas")
+#print(InfijaAPostEija("45000/{12*(23+3)^2}"))
 # print(InfijaAPostEija("2 ^ (3 + 4)"))
 # print(InfijaAPostEija("2 + 3 * 4)"))
-print(InfijaAPostEija("[{2*(1+3)^2}+{(1+2)*3}"))
-# print(InfijaAPostEija("[{2*(1+3)^2}+{(1+2)*3}]"))
+#print(InfijaAPostEija("[{2*(1+3)^2}+{(1+2)*3}]"))
 

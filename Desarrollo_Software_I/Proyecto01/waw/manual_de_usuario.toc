@@ -1,0 +1,27 @@
+\babel@toc {nil}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {section}{\numberline {2}Características}{2}{section.2}%
+\contentsline {section}{\numberline {3}Descripción General}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Vista Frontal}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Teclas y sus Funciones}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Instrucciones de Uso}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Encender la Calculadora}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Operaciones Básicas}{3}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Suma}{3}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Resta}{3}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Multiplicación}{3}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}División}{4}{subsubsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.3}Funciones Avanzadas}{4}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Funciones Trigonométricas}{4}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Funciones Logarítmicas}{4}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Funciones Exponenciales}{4}{subsubsection.4.3.3}%
+\contentsline {section}{\numberline {5}Memoria}{4}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Guardar en Memoria}{4}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Recuperar de Memoria}{4}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Borrar Memoria}{4}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Resolución de Problemas}{4}{section.6}%
+\contentsline {subsection}{\numberline {6.1}La Calculadora No Enciende}{4}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}La Pantalla Muestra un Error}{5}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Mantenimiento}{5}{section.7}%
+\contentsline {section}{\numberline {8}Especificaciones Técnicas}{5}{section.8}%
+\contentsline {section}{\numberline {9}Contacto y Soporte}{5}{section.9}%
