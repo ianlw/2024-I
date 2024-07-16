@@ -1,0 +1,29 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Bienvenido</h2>
+        <?php if (isset($_SESSION['user_id'])): ?>
+            <p>Has iniciado sesión. <a href="welcome.php" class="btn btn-success">Ir a la página de bienvenida</a></p>
+            <form action="logout.php" method="POST">
+                <input type="submit" value="Cerrar sesión" class="btn btn-danger">
+            </form>
+        <?php else: ?>
+            <p><a href="login.php" class="btn btn-primary">Iniciar sesión</a> o <a href="signup.php" class="btn btn-secondary">Registrarse</a></p>
+        <?php endif; ?>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
